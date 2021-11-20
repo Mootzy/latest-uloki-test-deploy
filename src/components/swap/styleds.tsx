@@ -55,7 +55,7 @@ export const StyledBalanceMaxMini = styled.button`
   font-weight: 400;
   margin-left: 0.4rem;
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: #666;
   display: flex;
   justify-content: center;
   align-items: center;
