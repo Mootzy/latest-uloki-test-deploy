@@ -114,46 +114,46 @@ const config: MenuEntry[] = [
 export const footerLinks: any = {
   'column1': [
     {
-      label: 'Link 1',
-      href: 'https://pancakeswap.info',
+      label: 'Website',
+      href: 'https://www.universalfloki.com',
     },
     {
-      label: 'Link 2',
-      href: 'https://pancakeswap.info',
+      label: 'Documentation',
+      href: 'https://www.universalfloki.com',
     },
     {
-      label: 'Link 2',
-      href: 'https://pancakeswap.info',
+      label: 'Token',
+      href: 'https://universalfloki.com',
     },
   ],
   'column2': [
     {
-      label: 'Link 1',
+      label: 'Telegram',
       href: 'https://pancakeswap.info',
     },
     {
-      label: 'Link 2',
+      label: 'Twitter',
       href: 'https://pancakeswap.info',
     },
     {
-      label: 'Link 2',
+      label: 'Instagram',
       href: 'https://pancakeswap.info',
     },
   ],
-  'column3': [
-    {
-      label: 'Link 1',
-      href: 'https://pancakeswap.info',
-    },
-    {
-      label: 'Link 2',
-      href: 'https://pancakeswap.info',
-    },
-    {
-      label: 'Link 2',
-      href: 'https://pancakeswap.info',
-    },
-  ]
+  // 'column3': [
+  //   {
+  //     label: 'Link 1',
+  //     href: 'https://pancakeswap.info',
+  //   },
+  //   {
+  //     label: 'Link 2',
+  //     href: 'https://pancakeswap.info',
+  //   },
+  //   {
+  //     label: 'Link 2',
+  //     href: 'https://pancakeswap.info',
+  //   },
+  // ]
 };
 
 export default config

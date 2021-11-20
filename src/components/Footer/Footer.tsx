@@ -7,30 +7,35 @@ import { footerLinks } from '../Menu/config';
 
 const StyledUl = styled.ul`
   list-style: none;
-  padding: 5px 0px 0px 0px;
+  padding: 2.5px 0px 0px 0px;
+  fontSize: '9px';
 `
 
 const StyledLi = styled.li`
   font-family: 'Kanit',sans-serif;
-  padding: 5px 0px;
+  padding: 2.5px 0px;
+  fontSize: '9px';
 `;
 
 const YellowLink = styled.a`
   font-family: 'Kanit',sans-serif;
-  padding: 5px 0px;
+  word-wrap: 'true',
+  padding: 2.5px 0px;
+  fontSize: '5px';
+  align-items: 'center';
 `
 
 const FooterDivider = styled.div`
   height: 1px;
-  background-color: #fff;
-  width: 20px;
-  margin-bottom: 15px;
+  background-color: transparent;
+  width: 10px;
+  margin-bottom: 2.5px;
 `
 
 const FooterSpacing = styled.div`
-  height: 150px;
+  height: 50px;
   @media (max-width: 848px) {
-    height: 500px;
+    height: 200px;
   }
 `
 
@@ -38,11 +43,11 @@ export default function Footer() {
     return (
         <>
         <FooterSpacing />
-        <div style={{ position: 'absolute', bottom: '0px', width: '100%', color: '#fff', backgroundColor: '#27262d', padding: '30px 0px', margin: '50px 0px 0px 0px' }}>
+        <div style={{ position: 'relative', width: '100%', color: '#fff', backgroundColor: 'transparent', padding: '0px 0px', margin: '0px 0px 0px 0px', left:'0', right:'0' }}>
             <Grid container spacing={2}>
             <Grid item md={3} xs={12}>
-                <Box sx={{ p: '10px 40px' }}>
-                <Typography variant="h3" sx={{ fontFamily: "'Kanit',sans-serif", color: '#9a6aff', fontSize: '17px', fontWeight: 'bold' }}>
+                <Box sx={{ p: '10px 10px' }}>
+                <Typography variant="h4" sx={{ fontFamily: "'Kanit',sans-serif", color: '#f3756b', fontSize: '10px', fontWeight: 'bold' }}>
                     ABOUT
                 </Typography>
                 <StyledUl>
@@ -51,44 +56,22 @@ export default function Footer() {
                 </Box>
             </Grid>
             <Grid item md={3} xs={12}>
-                <Box sx={{ p: '10px 40px' }}>
-                <Typography variant="h3" sx={{ fontFamily: "'Kanit',sans-serif", color: '#9a6aff', fontSize: '17px', fontWeight: 'bold' }}>
-                    HELP
+                <Box sx={{ p: '10px 10px' }}>
+                <Typography variant="h4" sx={{ fontFamily: "'Kanit',sans-serif", color: '#9a6aff', fontSize: '10px', fontWeight: 'bold' }}>
+                    SOCIAL
                 </Typography>
                 <StyledUl>
                     {footerLinks.column2.map((link) => <StyledLi key={link.label}><a href={link.href} target="_blank" rel="noop noreferrer">{link.label}</a></StyledLi>)}
                 </StyledUl>
                 </Box>
             </Grid>
-            <Grid item md={3} xs={12}>
-                <Box sx={{ p: '10px 40px' }}>
-                <Typography variant="h3" sx={{ fontFamily: "'Kanit',sans-serif", color: '#9a6aff', fontSize: '17px', fontWeight: 'bold' }}>
-                    DEVELOPERS
-                </Typography>
-                <StyledUl>
-                    {footerLinks.column3.map((link) => <StyledLi key={link.label}><a href={link.href} target="_blank" rel="noop noreferrer">{link.label}</a></StyledLi>)}
-                </StyledUl>
-                </Box>
-            </Grid>
-            <Grid item md={3} xs={12}>
-                <Box sx={{ p: '10px 40px' }}>
-                <a href="https://www.universalfloki.com/" aria-label="Pancake home page" className="sc-khQegj eSQmdh">
-                    <svg viewBox="0 0 105 26" className="mobile-icon" color="text" width="20px" xmlns="http://www.w3.org/2000/svg">
-                    <image width="100%" height="26" href="/images/156x25.svg" />
-                    </svg>
-                    <svg viewBox="0 0 105 26" className="desktop-icon" color="text" width="20px" xmlns="http://www.w3.org/2000/svg">
-                    <image width="100%" height="26" href="/images/156x25.svg" />
-                    </svg>
-                </a>
-                </Box>
-            </Grid>
             </Grid>
 
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
             <Grid item xs={12}>
-                <Box sx={{ p: '10px 40px' }}>
+                <Box sx={{ p: '5px 5px' }}>
                 <FooterDivider />
-                <YellowLink href='https://pancakeswap.info' target="_blank" rel="noop noreferrer" style={{ color: '#ffb237' }}>Online Store</YellowLink>
+                <YellowLink href='https://wwww.universalfloki.com/disclaimer' target="_blank" rel="noop noreferrer" style={{ color: '#ffb237', left: '20px', top:'-20px' }}>No content on the site constitutes - or should be understood as constituting - a recommendation to enter in any securities, cryptocurrency, or cryptoasset transactions or to engage in any of the investment strategies presented in our online content. </YellowLink>
                 </Box>
             </Grid>
             </Grid>
