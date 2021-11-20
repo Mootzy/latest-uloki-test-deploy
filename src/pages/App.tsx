@@ -156,6 +156,13 @@ export default function App() {
                 </BodyWrapper>
               </Menu>
               <Dialog
+                PaperProps={{
+                  style: {
+                    backgroundColor: 'black',
+                    color: 'white'
+                  },
+                }}        
+                sx={{color: 'white'}}      
                 open={usCitizenDialogOpen}
                 onClose={(event, reason) => {
                   if (reason !== "backdropClick") {
@@ -169,7 +176,7 @@ export default function App() {
                   Liability Waiver / Disclaimer: 
                 </DialogTitle>
                 <DialogContent>
-                  <DialogContentText id="alert-dialog-description">
+                  <DialogContentText id="alert-dialog-description" sx={{color: 'white'}}>
                     <p>No content on the site constitutes - or should be understood as constituting - a recommendation to enter in any securities, cryptocurrency, or cryptoasset transactions or to engage in any of the investment strategies presented in our online content. The services on universal-floki are not intended for use in the countries listed below. We do NOT hold any liability over any financial gain or loss due to usage of univerflokiswap, if you are a user from the below regions:</p>
                     <br />
                     <p>United States of America, China Mainland, Albania, Bosnia and Herzegovina, Belarus, Congo (DRC), Côte d&apos;Ivoire, Crimea, Cuba, Iraq, Iran, North Korea, Liberia, Macedonia, Myanmar, Serbia, Sudan, Syria, Zimbabwe.
