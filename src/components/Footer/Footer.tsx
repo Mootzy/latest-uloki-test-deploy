@@ -33,7 +33,7 @@ const FooterDivider = styled.div`
 `
 
 const FooterSpacing = styled.div`
-  height: 50px;
+  height: 200px;
   @media (max-width: 848px) {
     height: 200px;
   }
@@ -43,9 +43,9 @@ export default function Footer() {
     return (
         <>
         <FooterSpacing />
-        <div style={{ position: 'relative', width: '100%', color: '#fff', backgroundColor: 'transparent', padding: '0px 0px', margin: '0px 0px 0px 0px', left:'0', right:'0' }}>
+        <div style={{ position: 'absolute', width: '100%', color: '#fff', backgroundColor: 'transparent', padding: '22px 40px', margin: '0px 0px 0px 0px', left:'0', right:'0', bottom: '0px' }}>
             <Grid container spacing={2}>
-            <Grid item md={3} xs={12}>
+            <Grid item md={2} xs={6}>
                 <Box sx={{ p: '10px 10px' }}>
                 <Typography variant="h4" sx={{ fontFamily: "'Kanit',sans-serif", color: '#f3756b', fontSize: '10px', fontWeight: 'bold' }}>
                     ABOUT
@@ -55,7 +55,7 @@ export default function Footer() {
                 </StyledUl>
                 </Box>
             </Grid>
-            <Grid item md={3} xs={12}>
+            <Grid item md={2} xs={6}>
                 <Box sx={{ p: '10px 10px' }}>
                 <Typography variant="h4" sx={{ fontFamily: "'Kanit',sans-serif", color: '#9a6aff', fontSize: '10px', fontWeight: 'bold' }}>
                     SOCIAL
