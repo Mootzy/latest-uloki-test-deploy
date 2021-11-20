@@ -470,7 +470,7 @@ const Swap = () => {
           </CardBody>
         </Wrapper>
       </RainbowCard>
-      <AdvancedSwapDetailsDropdown trade={trade} />
+      {formattedAmounts[Field.INPUT] !== "" && formattedAmounts[Field.OUTPUT] !== "" && <AdvancedSwapDetailsDropdown trade={trade} />}
       <Footer />
     </>
   )
